@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="Estilos.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/sweetalert2.min.css">
+</head>
+
+<body class="p-5">
+  <h3>Clientes</h3>
+
+  <form class="Formulario">
+    <div class=" container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-3">
+          <label for="recipient-name" class="col-form-label">Nombre:</label>
+          <input type="text" class="form-control" id="recipient-name" required>
+          <div class="invalid-feedback">
+            Porfavor Ingresar el nombre.
+          </div>
+        </div>
+
+        <div class="col-3">
+          <label for="recipient-name" class="col-form-label">Fecha de Prestamo:</label>
+          <input type="date" class="form-control" id="fechaprestamo" required>
+          <div class="invalid-feedback">
+            Porfavor Ingresar la fecha.
+          </div>
+        </div>
+
+        <div class="col-3">
+          <label for="recipient-name" class="col-form-label">Total a Pagar:</label>
+          <input type="number" class="form-control" id="TotalAPagar" readonly>
+        </div>
+      </div>
+
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-3">
+          <label for="recipient-name" class="col-form-label">Interes %:</label>
+          <input type="number" class="form-control" id="InteresText" required>
+          <div class="invalid-feedback">
+            Porfavor Ingresar el interes.
+          </div>
+        </div>
+
+        <div class="col-3">
+          <label for="recipient-name" class="col-form-label">Cuotas Pendientes:</label>
+          <input type="number" class="form-control" id="cuotapendiente" required readonly>
+          <div class="invalid-feedback">
+            Porfavor Ingresar las cuotas pendientes.
+          </div>
+        </div>
+
+        <div class="col-3">
+          <label for="recipient-name" class="col-form-label">Valor Prestado:</label>
+          <input type="number" class="form-control" id="ValorPrestadoText" required>
+          <div class="invalid-feedback">
+            Porfavor Ingresar el valor prestado.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center"> <br>
+      <button type="button" id="BotonPrincipal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#PagoModal">
+        Pagar
+      </button>
+    </div>
+  </form>
+
+  <!-- Modal -->
+  <div class="modal fade" id="PagoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Realizar Pago: </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <label for="ValorPrestado" class="col-form-label">Valor Prestado:</label>
+          <input type="number" class="Ingreso" id="ValorPrestado" readonly> <br>
+
+          <label for="Interes" class="col-form-label">Intereses:</label>
+          <input type="number" class="Ingreso" id="Interes" readonly> <br>
+
+          <label for="ValorPagado" class="col-form-label">Valor Pagado:</label>
+          <input type="number" class="Ingreso" id="ValorPagado" placeholder="Ingresar Valor Pagado" required> <br>
+
+          <label for="Cuota" class="col-form-label">Cuota:</label>
+          <input type="number" class="Ingreso" id="Cuota" readonly> <br>
+
+          <label for="PagoCapital" class="col-form-label">Pago Capital:</label>
+          <input type="number" class="Ingreso" id="PagoCapital" readonly> <br>
+
+          <label for="InteresesValor" class="col-form-label">Valor de Interes:</label>
+          <input type="number" class="Ingreso" id="InteresesValor" readonly> <br>
+
+          <label for="Prestamo" class="col-form-label">Prestamo Actual:</label>
+          <input type="number" class="Ingreso" id="Prestamo" readonly>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id= "BtnCerrar" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" id="BtnGuardar">Guardar Cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/Java.js"></script>
+</body>
+
+</html>

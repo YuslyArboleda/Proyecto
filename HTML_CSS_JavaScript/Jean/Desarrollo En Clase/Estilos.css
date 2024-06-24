@@ -1,0 +1,33 @@
+img:hover {
+    width: 250px;
+}
+
+img {
+    border-style: solid;
+}
+
+body {
+    background-color: rgb(114, 172, 114);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+}
+
+h1 {
+    background-color: rgb(24, 138, 24);
+    color: white;
+    border-style: solid;
+    border-color: black;
+}
+
+h2,
+h3 {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+p, ol, ul {
+    border-style: solid;
+    border-radius: 5px;
+}

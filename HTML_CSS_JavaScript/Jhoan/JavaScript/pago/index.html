@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pagoo.css">
+    <title>Prestamo</title>
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+</head>
+
+<body>
+    <div class="text-center"> <br>
+        <h1>Cliente</h1> <br>
+    </div>
+    <form class="fila row g-3">
+        <div class="col-md-6">
+            <label for="inputnombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="inputnombre" required>
+            <div class="invalid-feedback">
+                Ingrese su nombre.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="inputdate" class="form-label">Fecha De Prestamo</label>
+            <input type="date" class="form-control" id="inputdate" required>
+            <div class="invalid-feedback">
+                Ingrese la fecha.
+            </div>
+        </div>
+        <div class="col-6">
+            <label for="inputinteres" class="form-label">Interés</label>
+            <input type="number" class="form-control" id="inputinteres" required>
+            <div class="invalid-feedback">
+                Ingrese el interes del prestamo.
+            </div>
+        </div>
+        <div class="col-6">
+            <label for="inputcuota" class="form-label">Cuotas Pendientes</label>
+            <input type="number" class="form-control" id="inputcuota" readonly>
+            <div class="invalid-feedback">
+                Ingrese el numero de cuotas.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="inputvalorpres" class="form-label">Valor Prestado</label>
+            <input type="number" class="form-control" id="inputvalorpres" required>
+            <div class="invalid-feedback">
+                Ingrese el valor prestado.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="inputotalpa" class="form-label">Total Pagar</label>
+            <input type="number" class="form-control" id="inputotalpa" readonly>
+        </div>
+        <!-- Button trigger modal -->
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pagoModal">
+                Realizar pago
+            </button>
+        </div>
+    </form>
+    <!-- Modal -->
+    <div class="modal fade" id="pagoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Realizar Pago</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="number" class="Ingreso" id="valorprestado" placeholder="Ingrese Valor Prestado"
+                        readonly><br>
+                    <input type="number" class="Ingreso" id="interes" placeholder="Intereses" readonly><br>
+                    <input type="number" class="Ingreso" id="Valor_pagado" placeholder="Valor Pagado" required><br>
+                    <input type="number" class="Ingreso" id="Cuota" placeholder="Cuota: " readonly><br>
+                    <input type="number" class="Ingreso" id="Pago_capi" placeholder="Pago_Capital" readonly><br>
+                    <input type="number" class="Ingreso" id="Valor_Interes" placeholder="Valor Intereses" readonly><br>
+                    <input type="number" class="Ingreso" id="Valor_pres" placeholder="Valor Prestamo" readonly>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" id="botonguar" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/pago.js"></script>
+</body>
+
+</html>
