@@ -1,1 +1,0 @@
-Deben crear una carpeta y guardar los ejercicios de python
