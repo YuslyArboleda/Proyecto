@@ -1,0 +1,37 @@
+
+h1{
+    text-align: center;
+}
+
+h1, h2, h3{
+    color:tomato;
+}
+
+div .párrafo {
+    color: black;
+}
+
+body{
+    background-color:#DBD92A;
+
+    border-style: inset;
+    border-color: rgb(255, 189, 127);
+    border-color: aqua;
+    border-width: 10px;
+}
+
+#imagen{
+    transition: transform 0.3s ease;
+}
+
+#imagen:hover{
+    transform: scale(1.2);
+}
+
+li, br{
+    color:#DB905E;
+}
+img{
+    border-radius: 100px;
+    width: 200px;
+}
