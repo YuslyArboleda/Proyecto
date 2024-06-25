@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../VSCode"
+		},
+		{
+			"path": "../../practica"
+		}
+	],
+	"settings": {}
+}
