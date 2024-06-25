@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Cine</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    
+    <!-- barra de navegacion -->
+    <header>
+        <nav class="nav">
+            <div class="nav-container">
+                <ul class="nav_ul">
+                    <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="#drama" class="nav_link">Drama</a></li>
+                    <li class="nav_item"><a href="#accion" class="nav_link">Acción</a></li>
+                    <li class="nav_item"><a href="#sexo" class="nav_link">Sexo</a></li>
+                    <li class="nav_item"><a href="#comedia" class="nav_link">Comedia</a></li>
+                    <li class="nav_item"><a href="#destacadas" class="nav_link">Destacadas</a></li>
+                    <li class="nav_item"><a href="#animacion" class="nav_link">Animación</a></li>
+                </ul>
+                <div class="search-container">
+                    <input type="text" id="buscar" name="buscar" placeholder="Buscar" class="search-input">
+                    <label for="buscar"></label>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- portada-fondo -->
+    <div class="portadaFondo"></div>
+    <div class="portadaDelante"></div>
+    <div class="cine"><h1><em>CHOCO<br>CINE</em></h1></div>
+
+<!-- <aside class="aside-custom"> -->
+    <!-- botones -->
+    <!-- wrapper para separar los botone -->
+  
+    <div class="wrapper">
+        <div class="button-container">
+            <button class="btn btn-1" onclick="window.location.href='#'">INICIA SESIÓN </button>
+        </div>
+        <div class="button-container">
+            <button class="btn btn-2" onclick="window.location.href='#'">REGÍSTRATE</button>
+        </div>
+    </div>
+<!-- barra animada -->
+<div class="animacion">
+    <div type="text" class="barra">
+    </div> 
+    </div>
+    <div class="cartelera">Cartelera</div>
+<!-- barra animada -->
+    <div class="animacion1">
+        <div type="text" class="barra1">
+        </div> 
+        </div>
+    
+    <div class="peliculas">
+        <div class="peli1">
+            <a href="https://www2.repelisplus.show/pelicula/razgovor/"> 
+                <img src="img/laConversacion.jpg" alt="LA CONVERSACION"width="210px" height="290px">
+            </a>
+        </div>
+
+        <div class="peli2">
+            <a href="https://www2.repelisplus.show/pelicula/el-salario-del-miedo/">
+                <img src="img/salarioDelMiedo.jpg" alt="SALARIO DEL MIEDO" width="210px" height="290px">
+            </a>
+        </div>
+
+        <div class="peli3">
+            <a href="https://www2.repelisplus.show/pelicula/imaginary/">
+                <img src="img/jugueteDiabolico.jpg" alt="IMAGINARIO JUGUETE DIABOLICO" width="210px" height="290px">
+            </a>
+        </div>
+
+        <div class="peli4">
+            <a href="https://www.filmelier.com/mx/film/2177/titanic">
+                <img src="img/titanic.png"alt="TITANIC" width="210px" height="290px">
+            </a>
+        </div>
+       
+        <div class="peli5">
+                <a href="https://www.cinecalidad.ec/ver-pelicula/la-sociedad-americana-de-negros-magicos/">
+                    <img src="img/negroMagicos.jpg" alt="LA SOCIEDAD AMERICANA DE NEGROS MAGICOS" width="210px" height="290px">
+                </a>
+            </div>
+
+        <div class="peli6">
+            <a href="https://ciberinfierno-la-investigacion-que-destapo-el-horror-p3.pelisplus3.org/">
+                <img src="img/ciberinfierno.jpg" alt="CIBERINFIERNO" width="210px" height="290px">
+            </a>
+        </div>
+
+        <div class="peli7">
+            <a href="https://www.cinecalidad.ec/ver-pelicula/el-rey-leon/">
+                <img src="img/reyLeon.jpg" alt="EL REY LEON"width="210px" height="290px">
+            </a>
+        </div>
+
+        <div class="peli8">
+            <a href="https://www2.repelisplus.show/pelicula/el-reino-del-planeta-de-los-simios/">
+                <img src="img/planetaSimios.jpg" alt="PLANETA DE LOS SIMIOS"width="210px" height="290px">
+            </a>
+        </div>
+
+        <div class="peli9">
+            <a href="https://www.cinecalidad.ec/ver-pelicula/en-el-juego-del-asesino/">
+                <img src="img/juegoDelAsecino.jpg" alt="EL JUEGO DEL ASESINO"width="210px" height="290px">
+            </a>
+        </div>
+
+        <div class="peli10">
+            <a href="https://www.cinecalidad.ec/ver-pelicula/revuelto/">
+                <img src="img/revuelto.jpg" alt="REVUELTO"width="210px" height="290px">
+            </a>
+        </div>
+
+    </div>
+
+    <section id="home" class="section">
+        <h2>Películas Home</h2>
+        <div class="peliculas">
+            <!-- Ejemplo de películas para la sección Home -->
+            <div class="peli1">
+                <a href="https://www.cinecalidad.ec/ver-pelicula/conoces-a-joe-black/">
+                    <img src="img/conocesJOEBLAck.jpg" alt="CONOCES A JOE BLACK"width="210px" height="290px">
+                </a>
+            </div>
+              <a href="https://www.cinecalidad.ec/ver-pelicula/godzilla-y-kong-el-nuevo-imperio/">
+                    <img src="img/godzilaKong.jpg" alt="GODZILA Y KONG"width="210px" height="290px">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="drama" class="section">
+        <h2>Películas de Drama</h2>
+        <div class="peliculas">
+            <!-- Ejemplo de películas para la sección DRAMA -->
+            <div class="draPeli1">
+                <a href="https://www.cinecalidad.ec/ver-pelicula/birth-rebirth/">
+                    <img src="img/birthRebirth.jpg" alt="BIRTH-REBIRTH"width="210px" height="290px">
+                </a>
+            </div>
+
+            <div class="draPeli2">
+                <a href="https://www.cinecalidad.ec/ver-pelicula/latido/">
+                    <img src="img/latido.jpg" alt="LATIDO"width="210px" height="290px">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="accion" class="section">
+        <h2>Películas de Acción</h2>
+        <div class="peliculas">
+            <!-- Ejemplo de películas para la sección Acción -->
+            <div class="acciPeli1">
+                <a href="https://www.cinecalidad.ec/ver-pelicula/wanted-man-se-busca/">
+                    <img src="img/seBusca.jpg" alt="SE BUSCA"width="210px" height="290px">
+                </a>
+            </div>
+
+            <div class="acciPeli2">
+                <a href="https://www2.repelisplus.show/pelicula/el-reino-del-planeta-de-los-simios/">
+                    <img src="img/planetaSimios.jpg" alt="PLANETA DE LOS SIMIOS"width="210px" height="290px">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Continúa con el mismo formato para las demás secciones -->
+
+    <section id="sexo" class="section">
+        <h2>Películas de Sexo</h2>
+        <div class="peliculas">
+            <div class="sexPeli1">
+                <a href="https://www.xnxx.com/video-16nzbu77/nena_tatuada_enculada_y_follada_en_el_auto_por_el_instructor_de_manejo">
+                    <img src="img/XNXX.COM.html" alt="EL INSTRUCTOR DE MANEJO"width="210px" height="290px">
+                </a>
+            </div>       
+
+            <div class="sexPeli2">
+                <a href="https://www.xnxx.com/video-15blddfc/madrastra_pidio_masaje_pero_en_su_lugar_tuvo_sexo_con_hijastro_y_creampie_subtitulos_en_espanol_">
+                    <img src="img/madrasta.jpg" alt="FELIZ DIA DE TU MUERTE 5"width="210px" height="290px">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="comedia" class="section">
+        <h2>Películas de Comedia</h2>
+        <div class="peliculas">
+             <div class="comePeli1">
+                <a href="https://www2.repelisplus.show/pelicula/los-simpson-la-buena-el-malo-y-loki/">
+                    <img src="img/sinpson.jpg" alt="LOS SIMPSON"width="210px" height="290px">
+                </a>
+            </div>
+           
+            <div class="comePeli2">
+                <a href="https://www.cinecalidad.ec/ver-pelicula/chestnut-el-heroe-de-central-park/">
+                    <img src="img/chestnuT.jpg" alt="CHESTNUT"width="210px" height="290px">
+                </a>
+            </div>
+           
+            <div class="peli3">
+                <a href="https://www.cinecalidad.ec/ver-pelicula/no-es-otra-pelicula-de-amor/">
+                    <img src="img/dateMovie.jpg" alt="NO ES OTRA PELICULA DE AMOR"width="210px" height="290px">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="destacadas" class="section">
+        <h2>Películas Destacadas</h2>
+        <div class="peliculas">
+            <div class="peli1">
+                <a href="https://www.cinecalidad.ec/ver-pelicula/la-delgada-linea-roja/">
+                    <img src="img/delagadalineaRoja.jpg" alt=" DELGADA LINEA ROJA"width="210px" height="290px">
+                </a>
+            </div>
+            <div class="peli2">
+                <a href="https://www.cinecalidad.ec/ver-pelicula/60-segundos/">
+                    <img src="img/sencentaSegundoi.jpg" alt="60 SEGUNDO"width="210px" height="290px">
+                </a>
+            </div>
+
+            <div class="peli3">
+                <a href="https://www.cinecalidad.ec/ver-serie/sugar/">
+                    <img src="img/Sugar.jpg" alt="SUGAR"width="210px" height="290px">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="animacion" class="section">
+        <h2><em></em>Películas de Animación</h2>
+        <div class="peliculas">
+            <div class="peli1">
+                <a href="https://www2.repelisplus.show/pelicula/garfield-la-pelicula/">
+                    <img src="img/garfield.jpg" alt="GRAFIELD"width="210px" height="290px">
+                </a>
+            </div>
+
+            <div class="peli2">
+                <a href="https://www.cinecalidad.ec/ver-pelicula/leonardo-el-inventor/">
+                    <img src="img/leonaroINVEntor.jpg" alt="LEONARDO, EL INVENTOR"width="210px" height="290px">
+                </a>
+            </div>
+
+            <div class="peli3">
+                <a href="https://www.cinecalidad.ec/ver-pelicula/leonardo-el-inventor/">
+                    <img src="img/leonaroINVEntor.jpg" alt="LEONARDO, EL INVENTOR"width="210px" height="290px">
+                </a>
+            </div>
+            <div class="peli4">
+                <a href="https://www.cinecalidad.ec/ver-pelicula/snack-shack/">
+                    <img src="img/Snack.jpg" alt="SNACK SNACK"width="210px" height="290px">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="terror" class="section">
+        <h2>Películas de Terror</h2>
+        <div class="peliculas">
+          <div class="peli1">
+                <a href="https://www.cinecalidad.ec/ver-pelicula/panico-en-la-montana/">
+                    <img src="img/panicoMontaña.jpg" alt="PANICO EN LA MONTAÑA"width="210px" height="290px">
+                </a>
+            </div>
+            <div class="peli2">
+                <a href="#">
+                    <img src="img/animacion2.jpg" alt="Película Animación 2"width="210px" height="290px">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="promociones">
+        
+        <img src="img/promocion.jpg" alt="Promociones" width="1090px" height="260x">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="cine.js"></script>
+</body>
+</html>
